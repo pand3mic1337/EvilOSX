@@ -6,7 +6,6 @@ from AppKit import NSPasteboard, NSStringPboardType
 from time import time, sleep
 from datetime import datetime
 
-
 def run(options):
     elapsed_time = 0
     monitor_time = int(options["monitor_time"])
